@@ -64,9 +64,9 @@ async def on_message(message):
     elif command == "업뎃":
         em = discord.Embed(title="무군봇 1.5 업데이트", colour=0xDEADBF)
         em.set_author(name="무군봇 패치 내역", icon_url="https://cdn.discordapp.com/attachments/712645622607380482/713327725288357889/KakaoTalk_20200319_154506750.jpg")
-        em.add_field(name="무군봇 항시 운영", value="무군봇이 앞으로는 24시간 운영됩니다! 불쌍한 녀석...")
-        em.add_field(name="무군봇 호스팅", value="무군봇이 무군의 컴퓨터가 아닌 Github에게 맡겨졌습니다")
-        em.add_field(name="무군봇이 단어를 기억못하는 오류 수정", value="무군봇에게 가르친 단어를 무군봇이 기억 못하는 오류를 수정했습니다")
+        em.add_field(name="무군봇 항시 운영", value="무군봇이 앞으로는 24시간 운영됩니다! 불쌍한 녀석...",inline=False)
+        em.add_field(name="무군봇 호스팅", value="무군봇이 무군의 컴퓨터가 아닌 Github에게 맡겨졌습니다",inline=False)
+        em.add_field(name="무군봇이 단어를 기억못하는 오류 수정", value="무군봇에게 가르친 단어를 무군봇이 기억 못하는 오류를 수정했습니다",inline=False)
         await client.send_message(message.channel, embed=em)
 
     elif command == "안녕?":
