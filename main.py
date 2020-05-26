@@ -34,18 +34,7 @@ def save_words(data, filename):
 
 
 data = load_words(FILENAME)
-
-@bot.command(pass_context=True)
-async def broadcast(ctx, *, msg):
-    for server in bot.servers:
-        for channel in server.channels:
-            try:
-                await bot.send_message(channel, msg)
-                except Exception:
-                    continue
-                else:
-                    break
-                        
+ 
 
 
 @client.event
